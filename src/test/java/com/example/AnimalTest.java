@@ -10,14 +10,14 @@ import static org.junit.Assert.*;
 public class AnimalTest {
 
     @Test
-    public void getFood1() throws Exception {
+    public void getFoodHerbivore() throws Exception {
         Animal animal = new Animal();
         List<String> expected  = List.of("Трава", "Различные растения");
         Assert.assertEquals(expected ,animal.getFood("Травоядное"));
     }
 
     @Test
-    public void getFood2() throws Exception {
+    public void getFoodPredator() throws Exception {
         Animal animal = new Animal();
         List<String> expected  = List.of("Животные", "Птицы", "Рыба");
         Assert.assertEquals(expected ,animal.getFood("Хищник"));
